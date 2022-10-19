@@ -6,11 +6,11 @@ set -e
 # build library
 yarn run build
 
-# build
-yarn run docs:build
+# build - not working as of now
+# yarn run docs:build
 
 # navigate into the build output directory
-cd docs/.vuepress/dist
+# cd docs/.vuepress/dist
 
 # if you are deploying to a custom domain
 # echo 'www.example.com' > CNAME
