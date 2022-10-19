@@ -17,7 +17,7 @@
 
 # About BootstrapVue3Icons
 
-All credit goes to the [BootstrapVue 3 project](https://bootstrap-vue.org/), this project only restores the functionality that was removed from the project to save space and make it more generic using icons.
+All credit goes to the [BootstrapVue 3 project](https://github.com/cdmoro/bootstrap-vue-3/), this project only restores the functionality that was removed from the project to save space and make it more generic using icons.
 
 # Install
 
