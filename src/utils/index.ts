@@ -1,0 +1,62 @@
+import {
+    isArray,
+    isBoolean,
+    isFunction,
+    isNull,
+    isNumber,
+    isNumeric,
+    isObject,
+    isPlainObject,
+    isString,
+    isUndefined,
+    isUndefinedOrNull,
+    toType,
+} from './inspect';
+import { mathMax, mathMin } from './math';
+import normalizeSlot from './normalize-slot';
+import { stringToInteger, toFloat, toInteger, toPrecison } from './number';
+
+export {
+    stringToInteger,
+    toFloat,
+    toInteger,
+    toPrecison,
+    normalizeSlot,
+    isArray,
+    isBoolean,
+    isFunction,
+    isNull,
+    isNumber,
+    isNumeric,
+    isObject,
+    isPlainObject,
+    isString,
+    isUndefined,
+    isUndefinedOrNull,
+    toType,
+    mathMax,
+    mathMin,
+};
+
+export default {
+    toString,
+    stringToInteger,
+    toFloat,
+    toInteger,
+    toPrecison,
+    normalizeSlot,
+    isArray,
+    isBoolean,
+    isFunction,
+    isNull,
+    isNumber,
+    isNumeric,
+    isObject,
+    isPlainObject,
+    isString,
+    isUndefined,
+    isUndefinedOrNull,
+    toType,
+    mathMax,
+    mathMin,
+};
