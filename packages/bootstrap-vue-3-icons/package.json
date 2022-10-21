@@ -1,0 +1,85 @@
+{
+  "name": "@boindil/bootstrap-vue-3-icons",
+  "displayName": "BootstrapVue3Icons",
+  "description": "Vue 3 Icons, seperated from BootstrapVue3",
+  "version": "0.0.1",
+  "license": "MIT",
+  "main": "./dist/bootstrap-vue-3-icons.umd.js",
+  "module": "./dist/bootstrap-vue-3-icons.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/bootstrap-vue-3.es.js",
+      "require": "./dist/bootstrap-vue-3.umd.js"
+    },
+    "./dist/bootstrap-vue-3.css": "./dist/bootstrap-vue-3.css",
+    "./nuxt": "./nuxt.js",
+    "./src/styles/styles.scss": "./src/styles/styles.scss"
+  },
+  "files": [
+    "dist",
+    "src",
+    "nuxt.js"
+  ],
+  "types": "./dist/BootstrapVueIcons.d.ts",
+  "private": false,
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc --noEmit && vite build",
+    "serve": "vite",
+    "lint": "eslint --ext .js,.vue --ignore-path ../../.gitignore --fix src",
+    "format": "prettier . --write",
+    "test": "pnpm run test:lint && pnpm run test:unit",
+    "test:lint": "pnpm run lint",
+    "test:unit": "vitest",
+    "test:coverage": "vitest --coverage"
+  },
+  "peerDependencies": {
+    "@popperjs/core": "^2.11.6",
+    "bootstrap": "^5.2.0",
+    "bootstrap-icons": "^1.5.0",
+    "bootstrap-vue-3": "^0.3.12",
+    "vue": "^3.2.37"
+  },
+  "devDependencies": {
+    "@popperjs/core": "^2.11.6",
+    "@types/bootstrap": "^5.2.2",
+    "@vitejs/plugin-vue": "^3.0.0",
+    "@vitest/coverage-c8": "^0.23.2",
+    "@vue/runtime-core": "^3.2.37",
+    "@vue/shared": "^3.2.37",
+    "@vue/test-utils": "^2.0.2",
+    "bootstrap": "^5.2.0",
+    "bootstrap-icons": "^1.5.0",
+    "bootstrap-vue-3": "^0.3.12",
+    "c8": "^7.12.0",
+    "jsdom": "^20.0.0",
+    "rollup": "^2.78.1",
+    "rollup-plugin-visualizer": "^5.7.1",
+    "sass": "^1.54.4",
+    "tsconfig": "workspace:*",
+    "typescript": "^4.7.4",
+    "vite": "^3.0.0",
+    "vite-plugin-dts": "^1.4.1",
+    "vitest": "^0.23.2",
+    "vue": "^3.2.37",
+    "vue-router": "^4.1.3",
+    "vue-tsc": "^0.38.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/boindil/bootstrap-vue-3-icons.git"
+  },
+  "bugs": {
+    "url": "https://github.com/boindil/bootstrap-vue-3-icons/issues"
+  },
+  "keywords": [
+    "vue3",
+    "components",
+    "bootstrap",
+    "icons"
+  ],
+  "lint-staged": {
+    "*.{js,vue}": "eslint --cache --fix",
+    "*": "prettier --write --ignore-unknown"
+  }
+}
