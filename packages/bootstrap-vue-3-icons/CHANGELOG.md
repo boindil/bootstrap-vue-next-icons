@@ -5,6 +5,14 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.1.2](https://github.com/boindil/bootstrap-vue-3-icons/compare/v0.1.1...v0.1.2) (2023-01-04)
+
+
+### Features
+
+* replicate original behaviour of bootstrap-vue for findIconComponent (https://github.com/bootstrap-vue/bootstrap-vue/blob/9e8dbbb841aecbe20d1f6555d0d953dcfbec862c/src/icons/icon.js#L13) ([e62a8eb](https://github.com/boindil/bootstrap-vue-3-icons/commit/e62a8ebb5121885aeadc01e2b16ced1b55a57fce))
+* replicate original behaviour of bootstrap-vue for findIconComponent (https://github.com/bootstrap-vue/bootstrap-vue/blob/9e8dbbb841aecbe20d1f6555d0d953dcfbec862c/src/icons/icon.js#L13) ([7453816](https://github.com/boindil/bootstrap-vue-3-icons/commit/74538163f0695f8423db3c4f2333ab99958adac7))
+
 ## [0.1.1](https://github.com/boindil/bootstrap-vue-3-icons/compare/v0.1.0...v0.1.1) (2023-01-04)
 
 

@@ -2,7 +2,7 @@
   "name": "@boindil/bootstrap-vue-3-icons",
   "displayName": "BootstrapVue3Icons",
   "description": "A package to incorporate Bootstrap Icons into Bootstrap-vue-3",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "license": "MIT",
   "main": "./dist/bootstrap-vue-3-icons.umd.js",
   "module": "./dist/bootstrap-vue-3-icons.es.js",
