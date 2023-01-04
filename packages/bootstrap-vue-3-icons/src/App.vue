@@ -62,7 +62,10 @@
       </h3>
       <ul class="row row-cols-3 row-cols-sm-4 row-cols-lg-6 row-cols-xl-8 list-unstyled list">
         <li v-for="(variant, index) in variants" :key="index" class="col mb-4">
-          <div class="p-3 py-4 mb-2 bg-light text-center rounded" :class="{ 'bg-light': !isDarkVariant(variant), 'bg-dark': isDarkVariant(variant) }">
+          <div
+            class="p-3 py-4 mb-2 bg-light text-center rounded"
+            :class="{'bg-light': !isDarkVariant(variant), 'bg-dark': isDarkVariant(variant)}"
+          >
             <b-icon :variant="variant" size="2x" icon="exclamation-circle-fill" />
           </div>
           <div class="name text-muted text-decoration-none text-center pt-1">
@@ -202,32 +205,46 @@
 import {defineComponent} from 'vue'
 import * as Components from './components'
 import BIcon from './components/BIcon/BIcon.vue'
-import {TextColorVariant, IconSize} from './types'
+import {IconSize, TextColorVariant} from './types'
 
 export default defineComponent({
   name: 'App',
   components: {BIcon},
+
+  setup() {
+    const isDarkVariant = (variant: TextColorVariant): boolean =>
+      variant === 'light' || variant.includes('white')
+
+    return {isDarkVariant}
+  },
   data: () => {
     const data: {
       icons: string[]
       variants: TextColorVariant[]
       sizes: IconSize[]
     } = {
-      icons: Object.keys(Components).filter(comp => !['BIcon', 'BIconstack'].includes(comp)),
-      variants: ['success', 'warning', 'danger', 'info', 'primary', 'secondary', 'dark', 'light', 'white', 'body', 'muted', 'black-50', 'white-50', 'reset'],
+      icons: Object.keys(Components).filter((comp) => !['BIcon', 'BIconstack'].includes(comp)),
+      variants: [
+        'success',
+        'warning',
+        'danger',
+        'info',
+        'primary',
+        'secondary',
+        'dark',
+        'light',
+        'white',
+        'body',
+        'muted',
+        'black-50',
+        'white-50',
+        'reset',
+      ],
       sizes: ['sm', 'md', 'lg', '2x', '3x', '4x', '5x'],
     }
 
     return data
   },
-
-  setup() {
-    const isDarkVariant = (variant: TextColorVariant):boolean => {
-      return variant === "light" || variant.includes("white")
-    }
-
-    return { isDarkVariant }
-  }
 })
 </script>
 
