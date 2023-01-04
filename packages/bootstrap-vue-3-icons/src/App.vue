@@ -221,9 +221,9 @@ export default defineComponent({
     return data
   },
 
-  setup(props) {
+  setup() {
     const isDarkVariant = (variant: TextColorVariant):boolean => {
-      return variant == "light" || variant.includes("white")
+      return variant === "light" || variant.includes("white")
     }
 
     return { isDarkVariant }
