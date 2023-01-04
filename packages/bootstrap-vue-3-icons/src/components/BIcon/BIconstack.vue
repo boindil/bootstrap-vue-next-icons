@@ -1,7 +1,7 @@
 <script lang="ts">
 import {defineComponent, h, PropType, VNode, VNodeArrayChildren} from 'vue'
 import normalizeSlot from '../../utils/normalizeSlot'
-import {ColorVariant} from '../../types'
+import {TextColorVariant} from '../../types'
 import {ICON_COMMON_PROPS} from '../../constants/icon'
 import BIconBase from './BIconBase.vue'
 
@@ -15,7 +15,7 @@ export default /* #__PURE__ */ defineComponent({
       required: false,
     },
     title: {type: String, required: false},
-    variant: {type: String as PropType<ColorVariant>, required: false},
+    variant: {type: String as PropType<TextColorVariant>, required: false},
   },
   setup(props, {slots}) {
     return () =>

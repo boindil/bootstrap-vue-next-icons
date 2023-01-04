@@ -1,6 +1,6 @@
 <script lang="ts">
 import {defineComponent, h, PropType, resolveComponent} from 'vue'
-import {ColorVariant} from '../../types'
+import {TextColorVariant} from '../../types'
 import {pascalCase, trim} from '../../utils/string'
 import {ICON_COMMON_PROPS} from '../../constants/icon'
 import BIconBase from './BIconBase.vue'
@@ -16,7 +16,7 @@ export default /* #__PURE__ */ defineComponent({
     icon: {type: String, required: true},
     stacked: {type: Boolean, default: false},
     title: {type: String, required: false},
-    variant: {type: String as PropType<ColorVariant>, required: false},
+    variant: {type: String as PropType<TextColorVariant>, required: false},
   },
   setup(props) {
     return () => {

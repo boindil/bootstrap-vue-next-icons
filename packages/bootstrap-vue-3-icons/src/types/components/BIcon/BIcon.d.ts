@@ -1,4 +1,4 @@
-import type {Animation, ColorVariant, IconSize} from '../..'
+import type {Animation, TextColorVariant, IconSize} from '../..'
 
 // Props
 export interface Props {
@@ -14,5 +14,5 @@ export interface Props {
   size?: IconSize
   stacked?: boolean
   title?: string
-  variant?: ColorVariant
+  variant?: TextColorVariant
 }

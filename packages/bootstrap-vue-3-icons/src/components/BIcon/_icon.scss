@@ -1,3 +1,6 @@
+@import "bootstrap/scss/bootstrap";
+@import "bootstrap/scss/variables";
+
 .bootstrap-icon {
   fill: currentColor;
   //   width: 1em;
@@ -44,20 +47,30 @@
       color: var(--bs-white);
     }
 
+    &-black {
+      color: var(--bs-black);
+    }
+
     &-body {
-      color: var(--bs-body);
+      color: $body-color;
     }
 
     &-muted {
-      color: var(--bs-muted);
+      color: $text-muted;
     }
 
-    &-black-50 {
-      color: var(--bs-black-50);
+    &-reset {
+      color: inherit!important;
     }
 
     &-white-50 {
-      color: var(--bs-white-50);
+      color: var(--bs-white);
+      opacity: .50;
+    }
+
+    &-black-50 {
+      color: var(--bs-black);
+      opacity: .50;
     }
   }
 
