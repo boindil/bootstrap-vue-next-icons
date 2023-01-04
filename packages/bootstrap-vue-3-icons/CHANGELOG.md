@@ -5,6 +5,13 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.1.4](https://github.com/boindil/bootstrap-vue-3-icons/compare/v0.1.3...v0.1.4) (2023-01-04)
+
+
+### Bug Fixes
+
+* lint files to allow release again ([39ec99c](https://github.com/boindil/bootstrap-vue-3-icons/commit/39ec99cb3f4fbef4399a6f54b4704510cc01b100))
+
 ## [0.1.3](https://github.com/boindil/bootstrap-vue-3-icons/compare/v0.1.2...v0.1.3) (2023-01-04)
 
 
