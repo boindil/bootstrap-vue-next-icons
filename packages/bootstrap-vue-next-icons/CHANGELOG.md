@@ -7,32 +7,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [0.2.2](https://github.com/boindil/bootstrap-vue-3-icons/compare/v0.2.1...v0.2.2) (2023-02-16)
 
-
 ### Bug Fixes
 
-* try to make resolver work ([7dcb24e](https://github.com/boindil/bootstrap-vue-3-icons/commit/7dcb24e36e0f5d13e1835bb3121212b9168aa1c8))
-
-## [0.2.1](https://github.com/boindil/bootstrap-vue-3-icons/compare/v0.2.0...v0.2.1) (2023-02-16)
-
-
-### Miscellaneous Chores
-
-* release 0.2.0 ([a100c96](https://github.com/boindil/bootstrap-vue-3-icons/commit/a100c96eb19d2b4523da17defb5a2e19e17c1d4b))
-* release 0.2.1 ([a59b231](https://github.com/boindil/bootstrap-vue-3-icons/commit/a59b231f15fb0ecfe789cf9e59ac58b68acefcc7))
-
-## [0.2.0](https://github.com/boindil/bootstrap-vue-3-icons/compare/v0.2.0...v0.2.0) (2023-02-16)
-
-
-### Miscellaneous Chores
-
-* release 0.2.0 ([a100c96](https://github.com/boindil/bootstrap-vue-3-icons/commit/a100c96eb19d2b4523da17defb5a2e19e17c1d4b))
+- try to make resolver work ([7dcb24e](https://github.com/boindil/bootstrap-vue-3-icons/commit/7dcb24e36e0f5d13e1835bb3121212b9168aa1c8))
 
 ## [0.2.0](https://github.com/boindil/bootstrap-vue-3-icons/compare/v0.1.4...v0.2.0) (2023-02-16)
 
-
 ### Miscellaneous Chores
 
-* release 0.2.0 ([4e095d1](https://github.com/boindil/bootstrap-vue-3-icons/commit/4e095d1f1c4ae80036d05726a5c32540632dc540))
+- release 0.2.0 ([4e095d1](https://github.com/boindil/bootstrap-vue-3-icons/commit/4e095d1f1c4ae80036d05726a5c32540632dc540))
 
 ## [0.1.4](https://github.com/boindil/bootstrap-vue-next-icons/compare/v0.1.3...v0.1.4) (2023-01-04)
 
