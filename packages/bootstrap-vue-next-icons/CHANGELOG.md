@@ -5,11 +5,17 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [0.2.2](https://github.com/boindil/bootstrap-vue-3-icons/compare/v0.2.1...v0.2.2) (2023-02-16)
+## [0.2.3](https://github.com/boindil/bootstrap-vue-3-icons/compare/v0.2.2...v0.2.3) (2023-02-16)
+
 
 ### Bug Fixes
 
-- try to make resolver work ([7dcb24e](https://github.com/boindil/bootstrap-vue-3-icons/commit/7dcb24e36e0f5d13e1835bb3121212b9168aa1c8))
+* try to make resolver work ([7dcb24e](https://github.com/boindil/bootstrap-vue-3-icons/commit/7dcb24e36e0f5d13e1835bb3121212b9168aa1c8))
+
+
+### Miscellaneous Chores
+
+* release 0.2.3 ([dcd6323](https://github.com/boindil/bootstrap-vue-3-icons/commit/dcd63232e21a73c56143d7102c0e8b69ad1b5d18))
 
 ## [0.2.0](https://github.com/boindil/bootstrap-vue-3-icons/compare/v0.1.4...v0.2.0) (2023-02-16)
 
