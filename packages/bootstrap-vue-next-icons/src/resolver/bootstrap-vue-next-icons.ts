@@ -29,7 +29,8 @@ export const BootstrapVueNextIconsResolver = (
     resolvers.push({
       type: 'directive',
       resolve: (name: string) => {
-        if (name.match(/^BIcon[A-Z]/)) return {name, from: '@boindil/bootstrap-vue-next-icons'}
+        if (name.match(/^BIcon[A-Z]/))
+          return {name: `v${name}`, from: '@boindil/bootstrap-vue-next-icons'}
       },
     })
   }
