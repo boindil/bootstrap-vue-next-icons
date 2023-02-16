@@ -5,6 +5,15 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.2.2](https://github.com/boindil/bootstrap-vue-3-icons/compare/v0.2.1...v0.2.2) (2023-02-16)
+
+
+### Reverts
+
+* vite-upgrade, vue-upgrade ([35fdeb2](https://github.com/boindil/bootstrap-vue-3-icons/commit/35fdeb22215ae08b58d29ba011c561a1bb1bed34))
+* vite-upgrade, vue-upgrade ([d414f14](https://github.com/boindil/bootstrap-vue-3-icons/commit/d414f14d362da92048e04dd6b6f0e26fe7aefdde))
+* vite-upgrade, vue-upgrade ([52ec686](https://github.com/boindil/bootstrap-vue-3-icons/commit/52ec686be1364def472c169648f9b0aaf5ff7b5f))
+
 ## [0.2.1](https://github.com/boindil/bootstrap-vue-3-icons/compare/v0.2.0...v0.2.1) (2023-02-16)
 
 ### Miscellaneous Chores
