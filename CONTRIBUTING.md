@@ -27,13 +27,13 @@ Setting up your workspace follows traditional open-source flows, if you are alre
 
 **Only pnpm is allowed**, attempting to run any other package manager tool will cause a warning error. View pnpm installation at <https://pnpm.io/installation>
 
-1. Go to the <https://github.com/boindil/bootstrap-vue-3-icons>
+1. Go to the <https://github.com/boindil/bootstrap-vue-next-icons>
 2. Click **Fork** at the top
 3. On your IDE of choice, clone your own, new, forked repository
 
 This repository is where you will make your changes to. You can safely run `git push ...` and other commands in this repository
 
-When opening your repository, it is usually best to open the **root** folder, not a subdirectory such as `./packages/bootstrap-vue-3-icons`. Eslint rules can sometimes get lost when opening a subdirectory of a workspace. If you do not have the recommended IDE extensions, it will usually suggest that you install them, but this is technically optional. You can finally run at the root:
+When opening your repository, it is usually best to open the **root** folder, not a subdirectory such as `./packages/bootstrap-vue-next-icons`. Eslint rules can sometimes get lost when opening a subdirectory of a workspace. If you do not have the recommended IDE extensions, it will usually suggest that you install them, but this is technically optional. You can finally run at the root:
 
 ```bash
 pnpm install
@@ -51,23 +51,23 @@ This will begin the process to merge your changes into the upstream repository's
 
 ## Developing
 
-The project uses a monorepo architecture. The main source files for the package exist in `./packages/bootstrap-vue-3-icons`, this is primarily where developing is done. You can then run `pnpm dev` and it will start all possible development environments. When developing the main package, you will want to open the **bootstrap-vue-3-icons:dev** host. This has hot-reloading to make developing easier. You can use the `./packages/bootstrap-vue-3-icons/src/app.vue` file as a test area for any changes that you make
+The project uses a monorepo architecture. The main source files for the package exist in `./packages/bootstrap-vue-next-icons`, this is primarily where developing is done. You can then run `pnpm dev` and it will start all possible development environments. When developing the main package, you will want to open the **bootstrap-vue-next-icons:dev** host. This has hot-reloading to make developing easier. You can use the `./packages/bootstrap-vue-next-icons/src/app.vue` file as a test area for any changes that you make
 
-You can also use `pnpm dev --filter bootstrap-vue-3-icons` to only open the main host
+You can also use `pnpm dev --filter bootstrap-vue-next-icons` to only open the main host
 
 ## Registering New Components
 
 For adding a new component, there are some notes...
 
-* They should only exist in the `./packages/bootstrap-vue-3-icons/src/components` directory
-* You should first review the `./packages/bootstrap-vue-3-icons/src/types` directory and get familiar with the internal types that you can use
+* They should only exist in the `./packages/bootstrap-vue-next-icons/src/components` directory
+* You should first review the `./packages/bootstrap-vue-next-icons/src/types` directory and get familiar with the internal types that you can use
 * They should follow `<script setup lang="ts">` syntax, to ensure uniformity, there are *some* exceptions to this rule regarding Vue SFC being unable to import or extend types
 * All Props and Emits should be fully written as TypeScript interfaces, the more strongly typed, the better
 
 After the implementation of the component, you can finally begin introducing the component to be exported by the main package, and usable by users of the library. To do that you will need to:
 
-1. Add the component to the import/export list, located in `./packages/bootstrap-vue-3-icons/src/components/index.ts`
-2. Next, it must be imported into `./packages/bootstrap-vue-3-icons/BootstrapVueIcons.ts` *please ensure that your import is made directly to the component, and not to the previous index.ts file*
+1. Add the component to the import/export list, located in `./packages/bootstrap-vue-next-icons/src/components/index.ts`
+2. Next, it must be imported into `./packages/bootstrap-vue-next-icons/BootstrapVueIcons.ts` *please ensure that your import is made directly to the component, and not to the previous index.ts file*
 3. After that, export it in the `export {}` list that contains the other components to be exported
 4. Finally, it must be included in the exported interface of **GlobalComponents**, following the pattern of `BComponent: typeof BComponent`
 
@@ -89,7 +89,7 @@ In general, always be careful when clicking external links. As programmers, it s
 
 Bootstrap Vue 3 uses <https://github.com/googleapis/release-please> to automate releases using workflows. The `.github/workflows/release-please.yaml` workflow will auto-generate releases when using conventional commits. We encourage all commit messages to follow conventional commit guidelines to keep commits clean and automate releases
 
-The workflow `.github/workflows/npm-publish.yaml` will then auto-publish at <https://www.npmjs.com/package/@boindil/bootstrap-vue-3-icons>
+The workflow `.github/workflows/npm-publish.yaml` will then auto-publish at <https://www.npmjs.com/package/@boindil/bootstrap-vue-next-icons>
 
 ## For Collaborators: Manual Releases
 
@@ -100,4 +100,4 @@ It will then auto-publish as stated before
 Collaborators can also manually release by:
 
 increase version in package.json, commit
-<https://github.com/boindil/bootstrap-vue-3-icons/releases/new> (create new tag)
+<https://github.com/boindil/bootstrap-vue-next-icons/releases/new> (create new tag)

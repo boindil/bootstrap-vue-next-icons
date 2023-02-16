@@ -39,6 +39,6 @@ jobs:
         run: pnpm test
 
       - name: Publish
-        run: pnpm publish --access public --filter "@boindil/bootstrap-vue-3-icons"
+        run: pnpm publish --access public --filter "@boindil/bootstrap-vue-next-icons"
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}

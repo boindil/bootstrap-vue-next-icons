@@ -1,9 +1,8 @@
 /// <reference types="vitest" />
 
-import {defineConfig, PluginOption} from 'vite'
+import {defineConfig} from 'vite'
 import vue from '@vitejs/plugin-vue'
 import {resolve} from 'path'
-import {visualizer} from 'rollup-plugin-visualizer'
 import dts from 'vite-plugin-dts'
 
 const config = defineConfig({
@@ -12,8 +11,8 @@ const config = defineConfig({
     minify: true,
     lib: {
       entry: resolve(__dirname, 'src/BootstrapVueIcons.ts'),
-      name: 'bootstrap-vue-3-icons',
-      fileName: (format) => `bootstrap-vue-3-icons.${format}.js`,
+      name: 'bootstrap-vue-next-icons',
+      fileName: (format) => `bootstrap-vue-next-icons.${format}.js`,
     },
     rollupOptions: {
       // make sure to externalize deps that shouldn't be bundled
@@ -32,7 +31,7 @@ const config = defineConfig({
       ],
       output: {
         exports: 'named',
-        assetFileNames: `bootstrap-vue-3-icons.[ext]`, //without this, it generates build/styles.css
+        assetFileNames: `bootstrap-vue-next-icons.[ext]`, //without this, it generates build/styles.css
         // Provide global variables to use in the UMD build
         // for externalized deps
         globals: {

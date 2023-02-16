@@ -60,17 +60,17 @@
     }
 
     &-reset {
-      color: inherit!important;
+      color: inherit !important;
     }
 
     &-white-50 {
       color: var(--bs-white);
-      opacity: .50;
+      opacity: 0.5;
     }
 
     &-black-50 {
       color: var(--bs-black);
-      opacity: .50;
+      opacity: 0.5;
     }
   }
 
