@@ -1,12 +1,14 @@
 {
   "$schema": "https://turborepo.org/schema.json",
-  "baseBranch": "origin/main",
   "pipeline": {
     "build": {
       "dependsOn": ["^build"],
       "outputs": ["dist/**"]
     },
     "test": {
+      "outputs": []
+    },
+    "test:ci": {
       "outputs": []
     },
     "test:lint": {
@@ -17,6 +19,13 @@
       "inputs": ["**/tests/*.ts", "**/tests/*.js", "**/*.spec.ts", "**/*.spec.js", "**/*.test.ts", "**/*.test.js"]
     },
     "test:coverage": {
+      "outputs": [],
+      "inputs": ["**/tests/*.ts", "**/tests/*.js", "**/*.spec.ts", "**/*.spec.js", "**/*.test.ts", "**/*.test.js"]
+    },
+    "test:lint:ci": {
+      "outputs": []
+    },
+    "test:unit:ci": {
       "outputs": [],
       "inputs": ["**/tests/*.ts", "**/tests/*.js", "**/*.spec.ts", "**/*.spec.js", "**/*.test.ts", "**/*.test.js"]
     },

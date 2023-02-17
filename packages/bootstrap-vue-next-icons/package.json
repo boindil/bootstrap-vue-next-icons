@@ -2,75 +2,88 @@
   "name": "@boindil/bootstrap-vue-next-icons",
   "displayName": "BootstrapVueNextIcons",
   "description": "A package to incorporate Bootstrap Icons into Bootstrap-vue-next",
-  "version": "0.2.4-rc.1",
+  "version": "0.2.4",
   "license": "MIT",
   "main": "./dist/bootstrap-vue-next-icons.umd.js",
   "module": "./dist/bootstrap-vue-next-icons.es.js",
+  "style": "./dist/bootstrap-vue-next-icons.css",
   "exports": {
     ".": {
+      "types": "./dist/src/BootstrapVueIcons.d.ts",
       "import": "./dist/bootstrap-vue-next-icons.es.js",
       "require": "./dist/bootstrap-vue-next-icons.umd.js"
     },
     "./dist/bootstrap-vue-next-icons.css": "./dist/bootstrap-vue-next-icons.css",
-    "./nuxt": "./nuxt.js",
+    "./src/*": "./src/*",
     "./src/styles/styles.scss": "./src/styles/styles.scss"
   },
   "files": [
     "dist",
     "src",
-    "nuxt.js"
+    "!src/**/*.spec.ts",
+    "!src/**/*.spec.js",
+    "!src/App.vue",
+    "!src/main.ts"
   ],
   "types": "./dist/BootstrapVueIcons.d.ts",
   "private": false,
   "scripts": {
     "dev": "vite --port 5175",
-    "build": "vue-tsc --noEmit && vite build",
-    "serve": "vite",
-    "lint": "eslint --ext .js,.vue --ignore-path ../../.gitignore --fix src",
-    "format": "prettier . --write",
-    "test": "pnpm run test:lint && pnpm run test:unit",
-    "test:lint": "pnpm run lint",
+    "build-only": "vite build",
+    "type-check": "vue-tsc --noEmit -p tsconfig.app.json --composite false",
+    "preview": "vite preview",
+    "build": "pnpm run type-check && pnpm run build-only",
+    "lint": "eslint --ext .js,.ts,.vue --ignore-path ../../.gitignore --fix src",
+    "test:lint": "eslint --ext .js,.ts,.vue --ignore-path ../../.gitignore src",
     "test:unit": "vitest",
-    "test:coverage": "vitest --coverage"
+    "test:coverage": "vitest --coverage",
+    "test:lint:ci": "pnpm run test:lint",
+    "test:unit:ci": "vitest run",
+    "test": "pnpm run test:lint && pnpm run test:unit",
+    "test:ci": "pnpm run test:lint:ci && pnpm run test:unit:ci"
   },
   "peerDependencies": {
-    "@popperjs/core": "^2.11.6",
-    "bootstrap": "^5.2.3",
-    "bootstrap-icons": "^1.10.3",
-    "vue": "^3.2.47"
-  },
-  "dependencies": {
-    "@nuxt/kit": "3.0.0"
+    "@popperjs/core": "^2.11.8",
+    "bootstrap": "^5.3.3",
+    "bootstrap-icons": "^1.11.3",
+    "vue": "^3.4.18"
   },
   "devDependencies": {
-    "@popperjs/core": "^2.11.6",
-    "@types/bootstrap": "^5.2.6",
-    "@vitejs/plugin-vue": "^4.0.0",
-    "@vitest/coverage-c8": "^0.25.3",
-    "@vue/runtime-core": "^3.2.47",
-    "@vue/shared": "^3.2.47",
-    "@vue/test-utils": "^2.2.5",
-    "bootstrap": "^5.2.3",
-    "bootstrap-icons": "^1.9.1",
-    "c8": "^7.12.0",
-    "happy-dom": "^7.7.2",
-    "jiti": "^1.16.0",
-    "rollup": "^3.5.1",
-    "rollup-plugin-visualizer": "^5.8.3",
-    "sass": "^1.56.1",
-    "tsconfig": "workspace:*",
-    "typescript": "^4.9.3",
+    "@popperjs/core": "^2.11.8",
+    "@types/bootstrap": "^5.2.10",
+    "@floating-ui/core": "^1.6.0",
+    "@rushstack/eslint-patch": "^1.7.2",
+    "@tsconfig/node20": "^20.1.2",
+    "@types/node": "^20.11.17",
+    "@vitejs/plugin-vue": "^5.0.4",
+    "@vitest/coverage-v8": "^1.2.2",
+    "@vue/eslint-config-prettier": "^9.0.0",
+    "@vue/eslint-config-typescript": "^12.0.0",
+    "@vue/runtime-core": "^3.4.18",
+    "@vue/test-utils": "^2.4.4",
+    "@vue/tsconfig": "^0.5.1",
+    "@vueuse/shared": "^10.7.2",
+    "bootstrap": "^5.3.3",
+    "bootstrap-icons": "^1.11.3",
+    "eslint": "^8.56.0",
+    "eslint-define-config": "^2.1.0",
+    "eslint-plugin-vue": "^9.21.1",
+    "happy-dom": "^13.3.8",
+    "prettier": "^3.2.5",
+    "sass": "^1.70.0",
+    "typescript": "^5.3.3",
     "unplugin-vue-components": "^0.23.0",
-    "vite": "^4.1.0",
-    "vite-plugin-dts": "^1.7.1",
-    "vitest": "^0.28.5",
-    "vue": "^3.2.47",
-    "vue-router": "^4.1.6",
-    "vue-tsc": "^1.0.24"
+    "vite": "^5.1.1",
+    "vite-plugin-dts": "^3.7.2",
+    "vitest": "^1.2.2",
+    "vue": "^3.4.18",
+    "vue-router": "^4.2.5",
+    "vue-tsc": "^1.8.27"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/boindil/bootstrap-vue-next-icons.git"
+    "url": "git+https://github.com/boindil/bootstrap-vue-next-icons.git",
+    "directory": "packages/bootstrap-vue-next-icons"
   },
   "bugs": {
     "url": "https://github.com/boindil/bootstrap-vue-next-icons/issues"
@@ -87,7 +100,7 @@
     "bootstrapvueicons"
   ],
   "lint-staged": {
-    "*.{js,vue}": "eslint --cache --fix",
+    "!(*node).{js,vue}": "eslint --cache --fix",
     "*": "prettier --write --ignore-unknown"
   }
 }

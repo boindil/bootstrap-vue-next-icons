@@ -1,0 +1,18 @@
+{
+  "configurations": [
+    {
+      "name": "Launch app dev",
+      "request": "launch",
+      "runtimeArgs": [
+        "dev",
+        "--filter",
+        "bootstrap-vue-next-icons"
+      ],
+      "runtimeExecutable": "pnpm",
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
+      "type": "node"
+    },
+  ]
+}
