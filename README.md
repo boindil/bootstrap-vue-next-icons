@@ -64,6 +64,8 @@ export default defineConfig({
 })
 ```
 
+It seems, that vite 3.x has problems building when using the resolver. Please use vite 4.x instead.
+
 # Contribute 🙌
 
 If you want to contribute you can:
