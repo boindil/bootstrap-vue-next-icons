@@ -1,26 +1,31 @@
-module.exports = {
+/* eslint-env node */
+require('@rushstack/eslint-patch/modern-module-resolution')
+
+const {defineConfig} = require('eslint-define-config')
+
+module.exports = defineConfig({
   root: true,
-  env: {
-    'browser': true,
-    'es6': true,
-    'node': true,
-    'vue/setup-compiler-macros': true,
-  },
   extends: [
-    'eslint:recommended',
     'plugin:vue/vue3-recommended',
-    '@vue/typescript/recommended',
-    'prettier',
+    'eslint:recommended',
+    '@vue/eslint-config-typescript/recommended',
+    '@vue/eslint-config-prettier',
   ],
-  plugins: ['prettier'],
   parserOptions: {
-    ecmaVersion: 2021,
+    ecmaVersion: 2020,
   },
   rules: {
-    'prettier/prettier': ['warn', {endOfLine: 'auto'}],
-    'no-alert': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
-    'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
-    'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
+    '@typescript-eslint/no-explicit-any': 'warn',
+    '@typescript-eslint/no-non-null-assertion': 'error',
+    'prettier/prettier': [
+      'warn',
+      {
+        endOfLine: 'auto',
+      },
+    ],
+    'no-alert': 'error',
+    'no-console': 'error',
+    'no-debugger': 'warn',
     'arrow-body-style': 'warn',
     'arrow-parens': 'warn',
     'eqeqeq': 'error',
@@ -64,8 +69,6 @@ module.exports = {
     'template-curly-spacing': 'warn',
     'yield-star-spacing': 'warn',
     'yoda': 'warn',
-    '@typescript-eslint/no-explicit-any': 'off',
-    'vue/require-default-prop': 'off',
     'vue/html-self-closing': [
       'error',
       {
@@ -78,5 +81,6 @@ module.exports = {
         math: 'always',
       },
     ],
+    'vue/eqeqeq': 'error',
   },
-}
+})

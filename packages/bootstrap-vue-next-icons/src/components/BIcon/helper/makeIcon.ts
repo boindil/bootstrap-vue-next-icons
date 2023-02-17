@@ -1,4 +1,4 @@
-import {defineComponent, h, VNode} from 'vue'
+import {defineComponent, h, type VNode} from 'vue'
 import {ICON_BASE_PROPS} from '../../../constants/icon'
 import {kebabCase, pascalCase, trim} from '../../../utils/string'
 import {omit} from '../../../utils/object'

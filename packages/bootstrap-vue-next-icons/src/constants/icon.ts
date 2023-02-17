@@ -1,5 +1,5 @@
-import {PropType, VNode, VNodeArrayChildren} from 'vue'
-import {Animation, IconSize, TextColorVariant} from '../types'
+import type {PropType, VNode, VNodeArrayChildren} from 'vue'
+import type {Animation, IconSize, TextColorVariant} from '../types'
 
 export const ICON_COMMON_PROPS = {
   animation: {type: String as PropType<Animation>},
@@ -9,7 +9,7 @@ export const ICON_COMMON_PROPS = {
   rotate: {
     type: [String, Number],
     required: false,
-    validator: (value: string | number) => value >= -360 && value <= 360,
+    validator: (value: string | number) => Number(value) >= -360 && Number(value) <= 360,
   },
   scale: {type: [Number, String], default: 1},
   shiftH: {type: [Number, String], default: 0},
