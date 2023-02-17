@@ -1,0 +1,24 @@
+{
+  "packages": {
+    "packages/bootstrap-vue-next-icons": {
+      "component": "bootstrapvuenexticons",
+      "release-type": "node",
+      "bump-minor-pre-major": true,
+      "bump-patch-for-minor-pre-major": true
+    }
+  },
+  "plugins": [
+    {
+      "type": "node-workspace",
+      "merge": false
+    },
+    {
+      "type": "linked-versions",
+      "groupName": "main group",
+      "components": [
+        "bootstrapvuenexticons"
+      ]
+    }
+  ],
+  "$schema": "https://raw.githubusercontent.com/googleapis/release-please/main/schemas/config.json"
+}

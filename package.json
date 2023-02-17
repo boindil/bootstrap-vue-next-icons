@@ -5,26 +5,26 @@
     "apps/*"
   ],
   "scripts": {
-    "build": "turbo run build",
+    "prepare": "husky install && turbo run build",
     "dev": "turbo run dev --parallel",
-    "test": "turbo run test",
+    "build": "turbo run build",
+    "lint": "turbo run lint",
     "test:lint": "turbo run test:lint",
     "test:unit": "turbo run test:unit",
     "test:coverage": "turbo run test:coverage",
-    "lint": "turbo run lint",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
-    "prepare": "husky install && turbo run build"
+    "test": "turbo run test",
+    "test:lint:ci": "turbo run test:lint:ci",
+    "test:unit:ci": "turbo run test:unit:ci",
+    "test:ci": "turbo run test:ci"
   },
   "devDependencies": {
-    "eslint-config-custom": "workspace:*",
-    "husky": "^8.0.1",
-    "lint-staged": "^13.0.3",
-    "release-please": "^14.1.0",
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.2",
     "turbo": "latest"
   },
   "engines": {
-    "npm": ">=7.0.0",
-    "node": ">=14.0.0"
+    "npm": ">=10.0.0",
+    "node": ">=20.0.0"
   },
-  "packageManager": "pnpm@7.13.0"
+  "packageManager": "pnpm@8.15.1"
 }

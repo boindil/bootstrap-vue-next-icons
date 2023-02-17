@@ -205,7 +205,7 @@
 import {defineComponent} from 'vue'
 import * as Components from './components'
 import BIcon from './components/BIcon/BIcon.vue'
-import {IconSize, TextColorVariant} from './types'
+import type {IconSize, TextColorVariant} from './types'
 
 export default defineComponent({
   name: 'App',

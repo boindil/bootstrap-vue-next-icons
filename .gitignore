@@ -44,3 +44,52 @@ stats.html
 
 # Tarballs
 *.tgz
+
+# Logs
+*.log*
+
+# Temp directories
+.tmp
+
+# Nuxt
+.nuxt
+.output
+.vercel_build_output
+.build-*
+.netlify
+.nitro
+.output
+
+# Env
+.env
+
+# Testing
+reports
+coverage
+*.lcov
+.nyc_output
+
+# VSCode
+.vscode/*
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/*.code-snippets
+
+# Intellij idea
+*.iml
+.idea
+
+# OSX
+.DS_Store
+.AppleDouble
+.LSOverride
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+TODO.md
+
+packages/bootstrap-vue-next-icons/src/App.vue
