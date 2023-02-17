@@ -36,7 +36,7 @@ export const makeIcon = (name: string, content: string) => {
   const iconName = `BIcon${pascalCase(name)}`
   const iconTitle = kebabName.replace(/-/g, ' ')
   const svgContent = trim(content || '')
-  const props = omit(ICON_BASE_PROPS, ['content', 'title'])
+  const props = omit(ICON_BASE_PROPS, ['content', 'title'] as const)
 
   return /* #__PURE__ */ defineComponent({
     name: iconName,

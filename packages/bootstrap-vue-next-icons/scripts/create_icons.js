@@ -102,7 +102,7 @@ const plugin: Plugin = {
   },
 }
 
-export {plugin as BootstrapVue3Icons}
+export {plugin as BootstrapVueNextIcons}
 export default plugin
 
 // --- END AUTO-GENERATED FILE ---
