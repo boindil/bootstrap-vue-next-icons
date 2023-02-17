@@ -1,13 +1,13 @@
 <script lang="ts">
 import {
-  ComponentPublicInstance,
+  type ComponentPublicInstance,
   defineComponent,
   getCurrentInstance,
   h,
-  PropType,
+  type PropType,
   resolveComponent,
 } from 'vue'
-import {TextColorVariant} from '../../types'
+import {type TextColorVariant} from '../../types'
 import {pascalCase, trim} from '../../utils/string'
 import {ICON_COMMON_PROPS} from '../../constants/icon'
 import BIconBase from './BIconBase.vue'
@@ -34,8 +34,8 @@ export default /* #__PURE__ */ defineComponent({
     ...ICON_COMMON_PROPS,
     icon: {type: String, required: true},
     stacked: {type: Boolean, default: false},
-    title: {type: String, required: false},
-    variant: {type: String as PropType<TextColorVariant>, required: false},
+    title: {type: String, required: false, default: ''},
+    variant: {type: String as PropType<TextColorVariant>, required: false, default: ''},
   },
   setup(props) {
     return () => {

@@ -5,14 +5,14 @@ import vue from '@vitejs/plugin-vue'
 import {resolve} from 'path'
 import dts from 'vite-plugin-dts'
 
-const config = defineConfig({
+export default defineConfig({
   build: {
     sourcemap: true,
     minify: true,
     lib: {
       entry: resolve(__dirname, 'src/BootstrapVueIcons.ts'),
       name: 'bootstrap-vue-next-icons',
-      fileName: (format) => `bootstrap-vue-next-icons.${format}.js`,
+      fileName: 'bootstrap-vue-next-icons',
     },
     rollupOptions: {
       // make sure to externalize deps that shouldn't be bundled
@@ -56,7 +56,10 @@ const config = defineConfig({
     vue({
       include: [/\.vue$/, /\.md$/],
     }),
-    dts({skipDiagnostics: false}),
+    dts({
+      tsconfigPath: './tsconfig.app.json',
+      outDir: './dist',
+    }),
   ],
 
   server: {
@@ -64,13 +67,10 @@ const config = defineConfig({
   },
 
   test: {
-    // globals: true,
     environment: 'happy-dom',
     coverage: {
-      provider: 'c8',
+      provider: 'v8',
       reporter: ['text', 'html'],
     },
   },
 })
-
-export default config
