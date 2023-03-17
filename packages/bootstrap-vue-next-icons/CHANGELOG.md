@@ -5,6 +5,18 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.2.5](https://github.com/boindil/bootstrap-vue-next-icons/compare/v0.2.4...v0.2.5) (2023-03-17)
+
+
+### Bug Fixes
+
+* add missing 'fill: currentColor' for icons ([1336bb2](https://github.com/boindil/bootstrap-vue-next-icons/commit/1336bb233ea0b03857a46fab3f3c8ec296ac7d45))
+
+
+### Miscellaneous Chores
+
+* release 0.2.5 ([accd11d](https://github.com/boindil/bootstrap-vue-next-icons/commit/accd11dddb6bc1aa4f4c711dbc12dcb7c4eb5390))
+
 ## [0.2.4](https://github.com/boindil/bootstrap-vue-3-icons/compare/v0.2.4-rc.1...v0.2.4) (2023-02-17)
 
 
