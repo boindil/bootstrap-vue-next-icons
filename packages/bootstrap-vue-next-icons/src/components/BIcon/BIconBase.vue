@@ -44,12 +44,7 @@ export default /* #__PURE__ */ defineComponent({
 
     let baseAttrs: any = {
       viewBox: '0 0 16 16',
-      // 'width': '1em',
-      // 'height': '1em',
-      // 'focusable': 'false',
-      // 'role': 'img',
-      // 'aria-label': 'icon',
-      // 'xmlns': 'http://www.w3.org/2000/svg',
+      fill: 'currentColor',
     }
 
     if (!props.stacked) {
