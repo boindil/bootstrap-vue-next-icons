@@ -5,6 +5,25 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.3.0](https://github.com/boindil/bootstrap-vue-next-icons/compare/bootstrapvuenexticons-v0.3.1...bootstrapvuenexticons-v0.3.0) (2024-03-26)
+
+
+### Bug Fixes
+
+* try to make resolver work ([7dcb24e](https://github.com/boindil/bootstrap-vue-next-icons/commit/7dcb24e36e0f5d13e1835bb3121212b9168aa1c8))
+
+
+### Miscellaneous Chores
+
+* release 0.1.3 ([9c9eeee](https://github.com/boindil/bootstrap-vue-next-icons/commit/9c9eeee48737b8ed5923173eb409ea9d5b77711d))
+* release 0.2.0 ([a100c96](https://github.com/boindil/bootstrap-vue-next-icons/commit/a100c96eb19d2b4523da17defb5a2e19e17c1d4b))
+* release 0.2.0 ([4e095d1](https://github.com/boindil/bootstrap-vue-next-icons/commit/4e095d1f1c4ae80036d05726a5c32540632dc540))
+* release 0.2.1 ([a59b231](https://github.com/boindil/bootstrap-vue-next-icons/commit/a59b231f15fb0ecfe789cf9e59ac58b68acefcc7))
+* release 0.2.3 ([dcd6323](https://github.com/boindil/bootstrap-vue-next-icons/commit/dcd63232e21a73c56143d7102c0e8b69ad1b5d18))
+* release 0.2.4 ([a1854f2](https://github.com/boindil/bootstrap-vue-next-icons/commit/a1854f278c062e9fcb075c22820d8c10bbc3fc7d))
+* release 0.2.4-rc.1 ([fd881c8](https://github.com/boindil/bootstrap-vue-next-icons/commit/fd881c8b56fd71d4c3e5243b907811fcbb3f0ef6))
+* release main ([fb07da7](https://github.com/boindil/bootstrap-vue-next-icons/commit/fb07da77d1e248f811a32cd67f85159f822b8a3c))
+
 ## [0.3.1](https://github.com/boindil/bootstrap-vue-next-icons/compare/bootstrapvuenexticons-v0.3.0...bootstrapvuenexticons-v0.3.1) (2024-03-25)
 
 ### Bug Fixes
