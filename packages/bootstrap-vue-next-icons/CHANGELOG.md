@@ -5,6 +5,18 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.3.2](https://github.com/boindil/bootstrap-vue-next-icons/compare/bootstrapvuenexticons-v0.3.1...bootstrapvuenexticons-v0.3.2) (2024-03-26)
+
+
+### Bug Fixes
+
+* package.json main/module/exports ([3c2544c](https://github.com/boindil/bootstrap-vue-next-icons/commit/3c2544c9072cf0b324fc08c4d38786bfcf7f0ced))
+
+
+### Miscellaneous Chores
+
+* release main ([eb0b9a5](https://github.com/boindil/bootstrap-vue-next-icons/commit/eb0b9a51d24a37123e8a19635ddc685009438173))
+
 ## [0.3.1](https://github.com/boindil/bootstrap-vue-next-icons/compare/bootstrapvuenexticons-v0.3.1...bootstrapvuenexticons-v0.3.1) (2024-03-26)
 
 ### Bug Fixes
