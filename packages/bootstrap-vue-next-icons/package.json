@@ -2,7 +2,7 @@
   "name": "@boindil/bootstrap-vue-next-icons",
   "displayName": "BootstrapVueNextIcons",
   "description": "A package to incorporate Bootstrap Icons into Bootstrap-vue-next",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "license": "MIT",
   "main": "./dist/bootstrap-vue-next-icons.umd.js",
   "module": "./dist/bootstrap-vue-next-icons.mjs",
