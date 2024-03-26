@@ -5,12 +5,12 @@
   "version": "0.3.1",
   "license": "MIT",
   "main": "./dist/bootstrap-vue-next-icons.umd.js",
-  "module": "./dist/bootstrap-vue-next-icons.es.js",
+  "module": "./dist/bootstrap-vue-next-icons.mjs",
   "style": "./dist/bootstrap-vue-next-icons.css",
   "exports": {
     ".": {
       "types": "./dist/src/BootstrapVueIcons.d.ts",
-      "import": "./dist/bootstrap-vue-next-icons.es.js",
+      "import": "./dist/bootstrap-vue-next-icons.mjs",
       "require": "./dist/bootstrap-vue-next-icons.umd.js"
     },
     "./dist/bootstrap-vue-next-icons.css": "./dist/bootstrap-vue-next-icons.css",
@@ -25,7 +25,7 @@
     "!src/App.vue",
     "!src/main.ts"
   ],
-  "types": "./dist/BootstrapVueIcons.d.ts",
+  "types": "./dist/src/BootstrapVueIcons.d.ts",
   "private": false,
   "scripts": {
     "dev": "vite --port 5175",
