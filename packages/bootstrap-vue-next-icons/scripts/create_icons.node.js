@@ -81,6 +81,9 @@ export {BIcon, BIconstack}
 // Export types
 export type {Animation, ColorVariant, IconSize, TextColorVariant} from './types'
 
+// Export resolver
+export {BootstrapVueNextIconsResolver} from './resolver/bootstrap-vue-next-icons'
+
 // Inject all components into the global @vue/runtime-core
 // This allows intellisense in templates w/out direct importing
 declare module '@vue/runtime-core' {

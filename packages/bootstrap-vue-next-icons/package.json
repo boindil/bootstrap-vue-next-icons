@@ -40,7 +40,8 @@
     "test:lint:ci": "pnpm run test:lint",
     "test:unit:ci": "vitest run",
     "test": "pnpm run test:lint && pnpm run test:unit",
-    "test:ci": "pnpm run test:lint:ci && pnpm run test:unit:ci"
+    "test:ci": "pnpm run test:lint:ci && pnpm run test:unit:ci",
+    "generateIconFiles": "pnpm jiti ./scripts/create_icons.node.js"
   },
   "peerDependencies": {
     "@popperjs/core": "^2.11.8",
@@ -102,5 +103,8 @@
   "lint-staged": {
     "!(*node).{js,vue}": "eslint --cache --fix",
     "*": "prettier --write --ignore-unknown"
-  }
+  },
+  "pre-commit": [
+    "generateIconFiles"
+  ]
 }
